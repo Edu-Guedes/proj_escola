@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ nome }}</h1>
+    <h2>Fundada em:</h2>
+    <h3>{{ ano }}</h3>
+
+    <h2>Serviços:</h2>
+    <ul>
+    {% for item in serviços %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
+
+

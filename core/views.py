@@ -23,3 +23,13 @@ def produtos_view2(request):
         "total": len(itens)
     }
     return render(request, 'produtos.html', contexto)
+
+def sobre_nos(request):
+
+    contexto = {
+        "nome": "Loja Tech",
+        "ano": "2007",
+        "serviços": ["manutenção", "vendas","formatação"]
+    }
+    return render(request, 'sobre.html', contexto)
+
