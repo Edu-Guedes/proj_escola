@@ -33,3 +33,13 @@ def sobre_nos(request):
     }
     return render(request, 'sobre.html', contexto)
 
+
+def itens_estoque(request):
+    produtos = [
+        {'nome': 'Camiseta',   'preco': 39.90},
+        {'nome': 'Calça Jeans', 'preco': 129.90},
+        {'nome': 'Boné',       'preco': 45.00},
+        {'nome': 'Tênis',      'preco': 219.90},
+        {'nome': 'Meia',       'preco': 19.90},
+    ]
+    return render(request, 'produtos2.html', produtos)

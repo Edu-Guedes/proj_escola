@@ -6,28 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ nome }}</h1>
-    <h2>Fundada em:</h2>
-    <h3>{{ ano }}</h3>
-
-    <h2>Serviços:</h2>
-    <ul>
-    {% for item in serviços %}
-        <li>{{ item }}</li>
-    {% endfor %}
-    </ul>
 
     <ul>
         {% for prod in produtos %}
             {% if prod["preco"] <= 50 %}
-                <b>{{ prod["nome"] }}</b>
+                <li><b>{{ prod }}</b></li>
+            
             {% else %}
-                {{ prod["nome"] }}
+                <li>{{ prod }}</li>
             {% endif %}
         {% endfor %}
     </ul>
 
 </body>
 </html>
-
-
